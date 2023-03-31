@@ -1,0 +1,184 @@
+/** ****************************************************************************
+Project: Seniores Digitais - Labora/Alura/Oracle ONE
+Programmer: Rosemeire Deconti
+Date: December/2020
+Challenge: Create Web Page MusidDot from Caelum course
+**************************************************************************** **/
+.planos {
+  background-image: url('../images/planos-background-mobile.png');
+  background-size: cover;
+  color: black;
+  position: relative;
+}
+
+.planos::before{
+  content: "";
+  width: 80%;
+  height: .1rem;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.planos .container {
+  align-items: center;
+  display: grid;
+  flex-wrap: wrap;
+  justify-items: center;
+  padding: 2em 1em;
+  text-align: center;
+  position: relative;
+}
+
+.planos-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.plano-destaque {
+  background-color: #FFFFFF;
+  box-shadow: 2px 0px 3px 1px rgba(00,00,00,0.2);
+  border-radius: 4px 4px 0 0;
+  color: orange;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding: 2% 4% 0 4%;
+}
+
+.box-plano {
+  background-color: orange;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.7rem;
+  padding: 4rem 1rem 1rem;
+  box-shadow: 2px 2px 3px 1px rgba(00,00,00,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 1.7rem;
+  background-position: top 1.5rem center;
+}
+
+.card1 {
+  background-image: url('../images/simbolo-musidot-branco.svg')
+}
+
+.card2 {
+  background-image: url('../images/simbolo-musidot-dark.svg');
+}
+
+
+.plano-title {
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+
+.box-plano > p {
+  font-weight: 300;
+  padding: 0.3em 0;
+}
+
+.box-plano p span{
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.box-plano p.aluralingua {
+  font-weight: 500;
+}
+
+.plano-button {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 3px 1px rgba(00,00,00,0.2);
+  border-radius: 4px;
+  color: orange;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+  padding: 0.8em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.planos p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 640px) {
+
+  .planos {
+    background-image: url('../images/planos-background.png');
+    background-size: cover;
+  }
+
+  .planos .container {
+    align-items: flex-end;
+    grid-template-columns: repeat(2, 14rem);
+    grid-template-rows: 2rem auto 2rem;
+    grid-template-areas:
+    "header header"
+    "card1 card2"
+    "footer footer";
+    gap: 1rem;
+    justify-content: center;
+    padding: 2em 1em 0em 1em;
+  }
+
+  .planos-title {
+    grid-area: header;
+    font-size: 1.0rem;
+  }
+
+  .card-anual {
+    grid-area: card1;
+  }
+
+  .card2 {
+    grid-area: card2;
+  }
+
+  .box-plano {
+    margin: 0em 1em 0em 1em;
+    padding: 4.8rem 0.8rem 0.2rem 0.8rem;
+    justify-content: space-between;
+    align-content: space-around;
+    background-size: 2.5rem;
+    background-position: top 1.2rem center;
+    height: 250px;
+    padding-bottom: 0.5rem;
+  }
+
+  .plano-title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .box-plano p {
+    width: 150px;
+  }
+
+  .cardfooter {
+    grid-area: footer;
+  }
+
+  .cardfooter p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,26 @@
+/** ****************************************************************************
+Project: Seniores Digitais - Labora/Alura/Oracle ONE
+Programmer: Rosemeire Deconti
+Date: December/2020
+Challenge: Create Web Page MusidDot from Caelum course
+**************************************************************************** **/
+.background {
+    background-image: url("../images/home-background-mobile.png");
+    background-size: 100%;
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 640px) {
+    main {
+        background-image: url("../images/home-background.png");
+        background-size: cover;
+    }
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 796px) {
+    main {
+        background-image: url("../images/home-background.png");
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,162 @@
+/** ****************************************************************************
+Project: Seniores Digitais - Labora/Alura/Oracle ONE
+Programmer: Rosemeire Deconti
+Date: December/2020
+Challenge: Create Web Page MusidDot from Caelum course
+**************************************************************************** **/
+.footer {
+    font-size: 0.7em;
+}
+
+.footer a{
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer .container {
+    padding-top: 2em;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 1em 0.8em 2em 0.8em;
+}
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+        .footer-logo img {
+            width: 11.25em;
+            margin: auto;
+        }
+
+    .footer-title {
+        text-transform: uppercase;
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 0.8em;
+        padding: 0 0.7em;
+    }
+
+    .footer-text {
+        line-height: 1.2rem;
+    }
+
+    .ul-socialmedia {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+        .ul-socialmedia li {
+            width: 2.62em;
+            margin: 0 .25em;
+        }
+
+
+            .footer-logo-media img {
+                width: 100%;
+            }
+
+    .ul-cursos li {
+        margin: 0.6em 0;
+    }
+
+        .ul-cursos li a {
+            font-weight: 500;
+            line-height: 1.2em;
+        }
+
+
+        .ul-cursos li a:hover {
+            color: pink;
+        }
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 640px) {
+
+    .footer {
+        font-size: 0.85rem;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        margin: 1em 0.8em 2em 0.8em;
+        width: 45%;
+    }
+
+    .--infos {
+        order: 1;
+    }
+
+    .--cursos {
+        order: 4;
+        margin-top: 2em;
+    }
+
+    .--links {
+        order: 3;
+        margin-top: 2em;
+    }
+
+    .--form {
+        order: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    .footer .container {
+        padding-top: 2em;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .footer-section {
+        margin: 0em;
+        width: auto;
+        margin-right: 1em;
+    }
+
+    .footer-title {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .ul-socialmedia {
+        justify-content: left;
+    }
+
+
+    .--infos {
+        order: 1;
+    }
+
+    .--cursos {
+        order: 2;
+    }
+
+    .--links {
+        order: 3;
+    }
+
+    .--form {
+        order: 4;
+    }
+
+}

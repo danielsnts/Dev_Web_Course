@@ -1,0 +1,181 @@
+/** ****************************************************************************
+Project: Seniores Digitais - Labora/Alura/Oracle ONE
+Programmer: Rosemeire Deconti
+Date: December/2020
+Challenge: Create Web Page MusidDot from Caelum course
+**************************************************************************** **/
+.youtube  {
+    background-color: darkblue;
+}
+
+.youtube .container {
+  display: grid;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.icone-youtube::before{
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url('../images/icone-youtube.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-75%);
+}
+
+.youtube-canal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem 1rem .8rem;
+  position: relative;
+}
+
+.canal-titulo {
+  color: pink;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: .9rem;
+  margin-bottom: .4rem;
+  letter-spacing: .5px;
+}
+
+.canal-texto {
+  font-size: .8rem;
+  letter-spacing: .8px;
+  line-height: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.canal-button {
+  background-color: #FFFFFF;
+  color: black;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: .5rem 0;
+  padding: 1rem 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.canal-button:hover {
+    transform: translateY(10%);
+    transition: transform 0.5s;
+}
+
+.video-descricao {
+  width: 85%;
+}
+
+.descricao-titulo {
+  color: white;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 15px;
+  margin-bottom: .2rem;
+}
+
+.descricao-titulo::before {
+  color: white;
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  background-image: url('../images/play-button.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 0.8rem auto 0.8rem;
+}
+
+.descricao-titulo:hover::before{
+  color: white;
+  transform: scale(1.1);
+  border: 2px solid var rose;
+  border-radius: 50%;
+}
+
+.descricao-texto {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 0.9rem;
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 640px) {
+
+  .youtube .container {
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 10rem 14rem;
+    grid-template-areas:
+    "title title"
+    "canal1 canal2";
+  }
+
+  .youtube-informacao {
+    grid-area: title;
+    padding: 2rem 17%;
+  }
+
+  .icone-youtube::before {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .youtube-video1 {
+    grid-area: canal1;
+  }
+
+  .youtube-video2 {
+    grid-area: canal2;
+  }
+
+  .descricao-titulo {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2rem;
+  }
+
+  .descricao-texto {
+    font-size: 0.8rem;
+  }
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 1024px) {
+
+  .youtube .container {
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 10rem 14rem;
+  }
+
+  .icone-youtube::before {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .canal-titulo {
+    font-size: 1.2rem;
+  }
+
+  .canal-texto {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+
+  .descricao-texto {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}

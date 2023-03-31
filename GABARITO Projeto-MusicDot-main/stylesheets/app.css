@@ -1,0 +1,144 @@
+/** ****************************************************************************
+Project: Seniores Digitais - Labora/Alura/Oracle ONE
+Programmer: Rosemeire Deconti
+Date: December/2020
+Challenge: Create Web Page MusidDot from Caelum course
+**************************************************************************** **/
+.app{
+  background-color: orange;
+}
+
+.app .container {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1.5rem 6%;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+}
+
+.app-title {
+  grid-area: 1/1/span 1/3;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.app-texto {
+  grid-area: 2/1/span 2/3;
+  padding: 0.5rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-android {
+  background-image: url('../images/icone-android-logo.svg');
+}
+
+.app-apple {
+  background-image: url('../images/icone-apple-logo.svg');
+}
+
+.app-button {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: left 0.5rem center;
+  box-shadow: 2px 2px 3px 1px rgba(00,00,00,0.2);
+  border-radius: 4px;
+  color: orange;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+  margin: auto;
+  padding: 0.8em 1.5em 0.8em 3em;
+  text-transform: uppercase;
+  grid-column: span 2;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 640px) {
+
+  .app .container {
+    font-size: 1rem;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "title title"
+    "texto texto"
+    "button1 button2";
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app-title{
+    grid-area: title;
+  }
+
+  .app-texto {
+    grid-area: texto;
+  }
+
+  .app-android {
+    grid-area: button1;
+  }
+
+  .app-apple {
+    grid-area: button2;
+  }
+}
+
+/** ------------------------------------------------------------ Media Query **/
+@media (min-width: 1024px) {
+
+  .app .container {
+    background-image: url(../images/mockup-app.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: top 1.5rem left 38%;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    grid-template-columns: 10rem 15rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "image title"
+    "image texto"
+    "image button";
+    margin: auto;
+    justify-content: center;
+    height: 290px;
+  }
+
+  .app-title{
+    grid-area: title;
+    align-self: flex-end;
+  }
+
+  .app-texto {
+    grid-area: texto;
+  }
+
+  .app-android {
+    grid-area: button;
+    margin-left: 1rem;
+  }
+
+  .app-apple {
+    grid-area: button;
+    margin-right: 1rem;
+  }
+
+  .app-button {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
