@@ -6,10 +6,12 @@
 		<link rel="stylesheet" href="estilo.css"/>
 		<script src="jogo.js"></script>
 	</head>
-	
-	<body onResize="ajustaTamanhoPalcoJogo">
+	<body onResize="ajustaTamanhoPalcoJogo()">
+		
 		<script>
-			posicaoRandomica()
+			setInterval(function() { //Criar um elemento html a cada segundo
+				posicaoRandomica()
+			}, 100)
 		</script>
 	</body>
 </html>
