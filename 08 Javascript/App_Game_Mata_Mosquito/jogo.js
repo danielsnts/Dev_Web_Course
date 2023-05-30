@@ -1,7 +1,8 @@
-
+  
 var altura = 0
 var largura = 0
 var vidas = 1
+var tempo = 5
 
 function ajustaTamanhoPalcoJogo() { // Definindo a dimensão do palco do jogo
 	altura = window.innerHeight
@@ -12,6 +13,22 @@ function ajustaTamanhoPalcoJogo() { // Definindo a dimensão do palco do jogo
 
 ajustaTamanhoPalcoJogo()
 
+var cronometro = setInterval(
+	function() {
+		
+	tempo -= 1
+		
+	if(tempo < 0) {
+		clearInterval(cronometro)
+		clearInterval(criaMosquito)
+		alert('Vi')
+	} else {
+		document.getElementById('cronometro').innerHTML = tempo
+	}
+		
+	
+	}
+, 1000)
 
 function posicaoRandomica() { //Fornece uma posição aleatória
 	
