@@ -21,7 +21,7 @@ var cronometro = setInterval(
 	if(tempo < 0) {
 		clearInterval(cronometro)
 		clearInterval(criaMosquito)
-		alert('Vi')
+		window.location.href = "vitoria.html"
 	} else {
 		document.getElementById('cronometro').innerHTML = tempo
 	}
@@ -43,10 +43,11 @@ function posicaoRandomica() { //Fornece uma posição aleatória
 			window.location.href = "fim_de_jogo.html"
 		} else {
 			document.getElementById("v" + vidas).src = "imagens/coracao_vazio.png"
+			  
+			vidas++
 		}
 		
-		vidas++
-	}
+	} 
 
 	var posicaoX = Math.floor(Math.random() * largura) - 90
 	var posicaoY = Math.floor(Math.random() * altura) - 90
