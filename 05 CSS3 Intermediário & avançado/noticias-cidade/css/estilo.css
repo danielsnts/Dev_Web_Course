@@ -72,4 +72,19 @@ body.fotos #navegacao a#fotos {
   background: #de003e;
   cursor: text;
 }
-/* Footer */
+
+/* Conteudo */
+#primario {
+  width: 270px;
+  background: blue;
+}
+
+#secundario {
+  width: 270px;
+  background: green;
+}
+
+#lateral {
+  width: 180px;
+  background: yellow;
+}
