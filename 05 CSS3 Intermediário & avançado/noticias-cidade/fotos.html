@@ -7,78 +7,77 @@
     <!--Estilo Customizado-->
     <link rel="stylesheet" href="css/estilo.css" type="text/css" />
   </head>
-  <body class="home">
-    <nav>
-      <div id="container">
-        <div id="topo">
-          <h1 class="logo">Notícias cidade</h1>
-          <ul id="navegacao">
-            <li class="primeiro"><a id="home" href="index.html">home</a></li>
-            <li><a id="brasil" href="brasil.html">Brasil</a></li>
-            <li><a id="internacional" href="index.html">Internacional</a></li>
-            <li><a id="economia" href="index.html">Economia</a></li>
-            <li><a id="saude" href="index.html">Saúde</a></li>
-            <li><a id="ciencia" href="index.html">Ciência</a></li>
-            <li><a id="fotos" href="fotos.html">Fotos</a></li>
-          </ul>
+  <body id="uma-coluna" class="fotos">
+    <!--Início do Container -->
+    <div id="container">
+      <!--Início topo -->
+      <div id="topo">
+        <h1 class="logo">Notícias cidade</h1>
+        <ul id="navegacao">
+          <li class="primeiro"><a id="home" href="index.html">home</a></li>
+          <li><a id="brasil" href="brasil.html">Brasil</a></li>
+          <li><a id="internacional" href="index.html">Internacional</a></li>
+          <li><a id="economia" href="index.html">Economia</a></li>
+          <li><a id="saude" href="index.html">Saúde</a></li>
+          <li><a id="ciencia" href="index.html">Ciência</a></li>
+          <li><a id="fotos" href="fotos.html">Fotos</a></li>
+        </ul>
+      </div>
+      <!--Fim topo -->
+      <div id="conteudo">
+        <!-- Conteúdo Primário-->
+        <div id="primario">
+          <div class="caixa destaque">
+            <h2>Destaque</h2>
+            <div class="caixa-conteudo">
+              <h3>Nova legislação</h3>
+              <img src="imagens/taxi.jpg" alt="" width="100%" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="">Leia mais!</a>
+            </div>
+          </div>
+          <div class="caixa">
+            <h2>Mundo</h2>
+            <div class="caixa-conteudo">
+              <ul id="lista-noticias">
+                <li>
+                  <a href="">
+                    <img width="80" src="imagens/tecnologia.jpg" alt="" />
+                    <h3>Novas tecologias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img width="80" src="imagens/tecnologia.jpg" alt="" />
+                    <h3>Novas tecologias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img width="80" src="imagens/tecnologia.jpg" alt="" />
+                    <h3>Novas tecologias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img width="80" src="imagens/tecnologia.jpg" alt="" />
+                    <h3>Novas tecologias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur....</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <!-- Fim Primário -->
       </div>
-    </nav>
-    <!-- <section>
-      <div>
-        <h2>Destaque</h2>
-        <h3>Nova legislação</h3>
-        <img src="imagens/taxi.jpg" alt="" class="imagem-principal" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <a href="">Leia mais!</a>
-      </div>
-      <div>
-        <h2>Mundo</h2>
-        <li>
-          <img src="imagens/tecnologia.jpg" alt="" />
-          <h3>Novas tecnologias!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        </li>
-        <li>
-          <img src="imagens/tecnologia.jpg" alt="" />
-          <h3>Novas tecnologias!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        </li>
-        <li>
-          <img src="imagens/tecnologia.jpg" alt="" />
-          <h3>Novas tecnologias!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        </li>
-        <li>
-          <img src="imagens/tecnologia.jpg" alt="" />
-          <h3>Novas tecnologias!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        </li>
-      </div>
-      <div>
-        <h2>Entrevistas</h2>
-        <div>
-          <ul>
-            <li>José Almeida</li>
-            <li>Felipe Silva</li>
-            <li>Renato Rodrigues</li>
-            <li>Abelardo Silveira</li>
-            <li>André Carlos</li>
-            <li>Márcio Mello</li>
-            <li>João Pedro</li>
-            <li>Fernando Weiss</li>
-          </ul>
-        </div>
-        <div>
-          <h2>News</h2>
-          <label for="email">Email:</label>
-          <input type="email" />
-          <div><input type="submit" /></div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div id="rodape">&copy;Copyright 2000-2018 Notícias cidade</div>
-    </footer>-->
+    </div>
+    <!--Fim do Container -->
+    <div id="container-rodape" style="clear: both">
+      <div id="rodape">&copy Copyright 2000-2018 Notícias Falsas</div>
+    </div>
   </body>
 </html>
